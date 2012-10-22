@@ -8,4 +8,5 @@ public class Player {
 		symbol = playerSymbol;
 		type = playerType;
 	}
+
 }
