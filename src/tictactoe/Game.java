@@ -5,23 +5,55 @@ import java.util.Map;
 
 public class Game {
 	public Board board;
-	public Map<String,String> firstPlayer = new HashMap<String, String>();
-	public Map<String,String> secondPlayer = new HashMap<String, String>();
+	public Player firstPlayer;
+	public Player secondPlayer;
+	public Player nextPlayer;
 
 	public Game(Board board, String firstSymbol, String firstType,
 	                         String secondSymbol, String secondType) {
 		this.board = board;
-		this.firstPlayer.put("symbol", firstSymbol);
-		this.firstPlayer.put("type", firstType);
-		this.secondPlayer.put("symbol", secondSymbol);
-		this.secondPlayer.put("type", secondType);
+		firstPlayer = new Player(firstSymbol,firstType);
+		secondPlayer = new Player(secondSymbol, secondType);
+		nextPlayer = firstPlayer;
 	}
 
-	public String playerSymbol(Map player) {
-		return (String) player.get("symbol");
+	public String[] updateBoard(Player player, String space) {
+		board.makeMove(player.symbol, Integer.parseInt(space));
+		switchNextPlayer(player);
+		return board.grid;
 	}
 
-	public String playerType(Map player) {
-		return (String) player.get("type");
+	private void switchNextPlayer(Player player) {
+		if (player.symbol == "x")
+			nextPlayer = secondPlayer;
+		else
+			nextPlayer = firstPlayer;
+	}
+
+	public Player nextOpponent() {
+		if (nextPlayer == firstPlayer)
+			return secondPlayer;
+		else
+			return firstPlayer;
+	}
+
+	public boolean over() {
+		if (board.winner() != "none" || board.draw() == true)
+			return true;
+		return false;
+	}
+
+	public boolean playerIsComputer(Player player) {
+		if (player.type == "computer")
+			return true;
+		return false;
+	}
+
+//	public int getAiMove(Board board, String aiSymbol, String opponentSymbol) {
+//		return nextPlayer.getMove(board, aiSymbol, opponentSymbol);
+//	}
+
+	public Integer getNextPlayerMove() {
+		return nextPlayer.getMove(board, nextPlayer.symbol, nextOpponent().symbol);
 	}
 }

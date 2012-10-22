@@ -1,5 +1,6 @@
 package tictactoe;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -24,33 +25,79 @@ public class GameTest {
 	}
 
 	@Test
-	public void newGameHasPlayers() throws Exception {
-		Map<String,String> testPlayer1 = new HashMap<String, String>();
-		Map<String,String> testPlayer2 = new HashMap<String, String>();
-		testPlayer1.put("symbol", "x");
-		testPlayer1.put("type","human");
-		testPlayer2.put("symbol", "o");
-		testPlayer2.put("type","computer");
-		assertEquals(testPlayer1, game.firstPlayer);
-		assertEquals(testPlayer2,game.secondPlayer);
+	public void newGameSetsPlayers() throws Exception {
+		assertEquals("x",game.firstPlayer.symbol);
+		Assert.assertEquals("human", game.firstPlayer.type);
+		assertEquals("o",game.secondPlayer.symbol);
+		Assert.assertEquals("computer", game.secondPlayer.type);
 	}
 
 	@Test
 	public void canGetPlayerSymbols() throws Exception {
-		assertEquals("x",game.playerSymbol(game.firstPlayer));
-		assertEquals("o",game.playerSymbol(game.secondPlayer));
+		assertEquals("x",game.firstPlayer.symbol);
+		assertEquals("o",game.secondPlayer.symbol);
 	}
 
 	@Test
-	public void canGetPlayerType() throws Exception {
-		assertEquals("human",game.playerType(game.firstPlayer));
-		assertEquals("computer",game.playerType(game.secondPlayer));
+	public void knowsIfPlayerIsComputer() throws Exception {
+		assertEquals(true, game.playerIsComputer(game.secondPlayer));
+		assertEquals(false, game.playerIsComputer(game.firstPlayer));
 	}
 
 	@Test
 	public void updatesGameBoardWithMove() throws Exception {
-		String[] testBoard = {"1","2","3","4","x","6","7","8","9"};
-		assertEquals(testBoard,game.board);
+		game.updateBoard(game.firstPlayer, "5");
+		assertEquals("x",game.board.grid[4]);
 	}
 
+	@Test
+	public void updateBoardReturnsNewBoard() throws Exception {
+		String[] testGrid = {"1","2","3","4","x","6","7","8","9"};
+		String[] new_board = game.updateBoard(game.firstPlayer, "5");
+		assertEquals(testGrid[4],new_board[4]);
+	}
+
+	@Test
+	public void hasNextPlayer() throws Exception {
+		assertEquals(game.firstPlayer,game.nextPlayer);
+	}
+
+	@Test
+	public void hasNextOpponent() throws Exception {
+		Assert.assertEquals(game.secondPlayer, game.nextOpponent());
+	}
+
+	@Test
+	public void switchesNextPlayerOnMove() throws Exception{
+		game.updateBoard(game.firstPlayer,"1");
+		assertEquals(game.nextPlayer, game.secondPlayer);
+	}
+
+	@Test
+	public void knowsGameOverForWin() throws Exception {
+		MockBoard mockBoard = new MockBoard();
+		mockBoard.winner = "x";
+		game.board = mockBoard;
+		assertEquals(true, game.over());
+	}
+
+	@Test
+	public void knowsGameOverForDraw() throws Exception {
+		MockBoard mockBoard = new MockBoard();
+		mockBoard.draw = true;
+		game.board = mockBoard;
+		assertEquals(true, game.over());
+	}
+
+
+	@Test
+	public void canGetMoveFromComputerPlayer() throws Exception {
+		MockAiPlayer mockAi = new MockAiPlayer("o", "computer");
+		game.secondPlayer = mockAi;
+		game.nextPlayer = game.secondPlayer;
+		game.getNextPlayerMove();
+		assertEquals(mockAi.receivedBoard, game.board);
+		assertEquals(mockAi.receivedPlayerSymbol, "o");
+		assertEquals(mockAi.receivedOpponentSymbol, "x");
+	}
 }
