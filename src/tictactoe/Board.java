@@ -6,17 +6,24 @@ import java.util.*;
 public class Board {
 	public String[] grid = {"1","2","3","4","5","6","7","8","9"};
 
-	public List<String> availableMoves() {
-		List<String> availableMoves = new ArrayList<String>();
-		for (int i = 0; i < 9; i++)
-			if (grid[i] != "x" && grid[i] != "o")
-				availableMoves.add(grid[i]);
-		return availableMoves;
-	}
-
 	public String[] makeMove(String playerSymbol, int i) {
 		grid[i-1] = playerSymbol;
 		return grid;
+	}
+
+	public String[] availableMoves() {
+		int spaces = 0;
+		for (String space : grid)
+		  if ("x" != space && "o" != space)
+			  spaces++;
+		String[] availableSpaces = new String[spaces];
+		int spacesIndex = 0;
+		for (int i = 0; i < 9; i++)
+			if (grid[i] != "x" && grid[i] != "o") {
+				availableSpaces[spacesIndex] = grid[i];
+				spacesIndex++;
+			}
+		return availableSpaces;
 	}
 
 	public boolean isValidMove(int i) {
@@ -25,26 +32,6 @@ public class Board {
 			valid = true;
 		}
 		return valid;
-	}
-
-	public boolean hasWinner() {
-		if (grid[0] == grid[1] && grid[0] == grid[2])
-			return true;
-		if (grid[3] == grid[4] && grid[3] == grid[5])
-			return true;
-		if (grid[6] == grid[7] && grid[6] == grid[8])
-			return true;
-		if (grid[0] == grid[3] && grid[0] == grid[6])
-			return true;
-		if (grid[2] == grid[5] && grid[2] == grid[8])
-			return true;
-		if (grid[1] == grid[4] && grid[1] == grid[7])
-			return true;
-		if (grid[0] == grid[4] && grid[0] == grid[8])
-			return true;
-		if (grid[2] == grid[4] && grid[2] == grid[6])
-			return true;
-		return false;
 	}
 
 	public String winner() {
@@ -68,7 +55,7 @@ public class Board {
 	}
 
 	public boolean draw() {
-		if (!this.hasWinner() && this.availableMoves().size() == 0)
+		if (this.winner() == "none" && this.availableMoves().length == 0)
 			return true;
 		return false;
 	}
