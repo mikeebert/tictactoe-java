@@ -9,4 +9,8 @@ public class Player {
 		type = playerType;
 	}
 
+	public int getMove(Board board, String symbol, String symbol1) {
+		return 0;  //To change body of created methods use File | Settings | File Templates.
+	}
+
 }

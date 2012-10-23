@@ -4,9 +4,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import static junit.framework.Assert.assertEquals;
 
 public class GameTest {
@@ -91,8 +88,8 @@ public class GameTest {
 
 
 	@Test
-	public void canGetMoveFromComputerPlayer() throws Exception {
-		MockAiPlayer mockAi = new MockAiPlayer("o", "computer");
+	public void sendsBoardAndSymbolsToAi() throws Exception {
+		MockAi mockAi = new MockAi("o", "computer");
 		game.secondPlayer = mockAi;
 		game.nextPlayer = game.secondPlayer;
 		game.getNextPlayerMove();
