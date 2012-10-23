@@ -59,4 +59,11 @@ public class Board {
 			return true;
 		return false;
 	}
+
+	public Board copy() {
+		Board newBoard = new Board();
+		for (int i = 0; i < 9; i++)
+			newBoard.grid[i] = this.grid[i];
+		return newBoard;
+	}
 }

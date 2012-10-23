@@ -96,4 +96,11 @@ public class BoardTest {
 		assertEquals(openMoves[2],board.availableMoves()[2]);
 		assertEquals(openMoves[3],board.availableMoves()[3]);
 	}
+
+	@Test
+	public void canDuplicateBoard() throws Exception {
+		board.makeMove("x",5);
+		Board newBoard = board.copy();
+		assertEquals("x", newBoard.grid[4]);
+	}
 }
