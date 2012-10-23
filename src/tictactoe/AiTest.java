@@ -93,7 +93,7 @@ public class AiTest {
 	}
 
 	@Test
-	public void returnsMoveBasedOnBoardAndPlayers() throws Exception {
+	public void returnsFirstCornerForOpeningMove() throws Exception {
 		Board board = new Board();
 		assertEquals("1", ai.getMove(board, "x", "o"));
 	}
