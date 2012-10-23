@@ -89,12 +89,12 @@ public class GameTest {
 
 	@Test
 	public void sendsBoardAndSymbolsToAi() throws Exception {
-		MockAi mockAi = new MockAi("o", "computer");
-		game.secondPlayer = mockAi;
-		game.nextPlayer = game.secondPlayer;
-		game.getNextPlayerMove();
+		MockAi mockAi = new MockAi();
+		game.ai = mockAi;
+		game.nextPlayer = game.firstPlayer;
+		game.getComputerMove();
 		assertEquals(mockAi.receivedBoard, game.board);
-		assertEquals(mockAi.receivedPlayerSymbol, "o");
-		assertEquals(mockAi.receivedOpponentSymbol, "x");
+		assertEquals(mockAi.receivedPlayerSymbol, "x");
+		assertEquals(mockAi.receivedOpponentSymbol, "o");
 	}
 }

@@ -8,6 +8,7 @@ public class Game {
 	public Player firstPlayer;
 	public Player secondPlayer;
 	public Player nextPlayer;
+	public Ai ai;
 
 	public Game(Board board, String firstSymbol, String firstType,
 	                         String secondSymbol, String secondType) {
@@ -15,6 +16,7 @@ public class Game {
 		firstPlayer = new Player(firstSymbol,firstType);
 		secondPlayer = new Player(secondSymbol, secondType);
 		nextPlayer = firstPlayer;
+		ai = new Ai();
 	}
 
 	public String[] updateBoard(Player player, String space) {
@@ -49,11 +51,7 @@ public class Game {
 		return false;
 	}
 
-//	public int getAiMove(Board board, String aiSymbol, String opponentSymbol) {
-//		return nextPlayer.getMove(board, aiSymbol, opponentSymbol);
-//	}
-
-	public Integer getNextPlayerMove() {
-		return nextPlayer.getMove(board, nextPlayer.symbol, nextOpponent().symbol);
+	public String getComputerMove() {
+		return ai.getMove(board, nextPlayer.symbol, nextOpponent().symbol);
 	}
 }
