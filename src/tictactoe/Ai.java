@@ -88,6 +88,5 @@ public class Ai {
 		max = new MaxPlayer(maxSymbol, MAXSTARTINGSCORE);
 		min = new MinPlayer(minSymbol, MINSTARTINGSCORE);
 	}
-
 }
 
