@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ttt" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="29e66fd8-8d01-4533-b26d-2ebbacc3e0d0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ttt.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/Ai.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/Board.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/Game.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/MaxPlayer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/MinPlayer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/MinimaxPlayer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/tictactoe/tictactoe/Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/AiTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/BoardTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/GameTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/MaxPlayerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/MinPlayerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/MockAi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/MockBoard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/tictactoe/tictactoe/PlayerTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tictactoe/Ai.java" afterPath="$PROJECT_DIR$/src/org/mebert/ttt/Ai.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tictactoe/Board.java" afterPath="$PROJECT_DIR$/src/org/mebert/ttt/Board.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tictactoe/Game.java" afterPath="$PROJECT_DIR$/src/org/mebert/ttt/Game.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tictactoe/MinimaxPlayer.java" afterPath="$PROJECT_DIR$/src/org/mebert/ttt/MinimaxPlayer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tictactoe/Player.java" afterPath="$PROJECT_DIR$/src/org/mebert/ttt/Player.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/tictactoe/AiTest.java" afterPath="$PROJECT_DIR$/test/org/mebert/ttt/AiTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/tictactoe/BoardTest.java" afterPath="$PROJECT_DIR$/test/org/mebert/ttt/BoardTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/tictactoe/GameTest.java" afterPath="$PROJECT_DIR$/test/org/mebert/ttt/GameTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/tictactoe/MaxPlayerTest.java" afterPath="$PROJECT_DIR$/test/org/mebert/ttt/MaxPlayerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/tictactoe/MinPlayerTest.java" afterPath="$PROJECT_DIR$/test/org/mebert/ttt/MinPlayerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/tictactoe/MockAi.java" afterPath="$PROJECT_DIR$/test/org/mebert/ttt/MockAi.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/tictactoe/MockBoard.java" afterPath="$PROJECT_DIR$/test/org/mebert/ttt/MockBoard.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/tictactoe/PlayerTest.java" afterPath="$PROJECT_DIR$/test/org/mebert/ttt/PlayerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/application.xml" afterPath="$PROJECT_DIR$/META-INF/application.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tictactoe.iml" afterPath="$PROJECT_DIR$/tictactoe.iml" />
     </list>
     <ignored path="tictactoe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,81 +98,90 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="AiTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tictactoe/AiTest.java">
+        <entry file="file://$PROJECT_DIR$/test/org/mebert/ttt/AiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="24" selection-start="1958" selection-end="1958" vertical-scroll-proportion="0.0">
+            <state line="81" column="24" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Ai.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tictactoe/Ai.java">
+        <entry file="file://$PROJECT_DIR$/src/org/mebert/ttt/Ai.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="3" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0">
+            <state line="89" column="3" selection-start="2426" selection-end="2426" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MinimaxPlayer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tictactoe/MinimaxPlayer.java">
+        <entry file="file://$PROJECT_DIR$/src/org/mebert/ttt/MinimaxPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+            <state line="24" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MinPlayerTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/tictactoe/MinPlayerTest.java">
+      <file leaf-file-name="MinPlayerTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/org/mebert/ttt/MinPlayerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="199" selection-end="199" vertical-scroll-proportion="0.14324693">
+            <state line="16" column="3" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tictactoe/Board.java">
+        <entry file="file://$PROJECT_DIR$/src/org/mebert/ttt/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="38" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.0">
+            <state line="62" column="38" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mebert/ttt/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BoardTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tictactoe/BoardTest.java">
+        <entry file="file://$PROJECT_DIR$/test/org/mebert/ttt/BoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="3" selection-start="2488" selection-end="2488" vertical-scroll-proportion="0.0">
+            <state line="98" column="1" selection-start="2316" selection-end="2316" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tictactoe/Game.java">
+      <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/mebert/ttt/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="18" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="-0.9341637">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GameTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tictactoe/GameTest.java">
+        <entry file="file://$PROJECT_DIR$/test/org/mebert/ttt/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="16" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.0">
+            <state line="94" column="16" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MockAi.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tictactoe/MockAi.java">
+        <entry file="file://$PROJECT_DIR$/test/org/mebert/ttt/MockAi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+            <state line="12" column="13" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,9 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/tictactoe/MockBoard.java" />
-        <option value="$PROJECT_DIR$/src/tictactoe/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/tictactoe/MockAiPlayer.java" />
         <option value="$PROJECT_DIR$/src/tictactoe/AiPlayerTest.java" />
         <option value="$PROJECT_DIR$/src/tictactoe/AiPlayer.java" />
         <option value="$PROJECT_DIR$/src/tictactoe/MinPlayerTest.java" />
@@ -170,6 +213,9 @@
         <option value="$PROJECT_DIR$/src/tictactoe/AiTest.java" />
         <option value="$PROJECT_DIR$/src/tictactoe/Ai.java" />
         <option value="$PROJECT_DIR$/src/tictactoe/MinimaxPlayer.java" />
+        <option value="$PROJECT_DIR$/src/ttt/Player.java" />
+        <option value="$PROJECT_DIR$/src/org/mebert/ttt/Player.java" />
+        <option value="$PROJECT_DIR$/src/org/mebert/ttt/Game.java" />
       </list>
     </option>
   </component>
@@ -180,10 +226,10 @@
     </ignored-facets>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="246" />
+    <option name="x" value="4" />
     <option name="y" value="22" />
-    <option name="width" value="1916" />
-    <option name="height" value="1178" />
+    <option name="width" value="1676" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -269,13 +315,13 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tictactoe" />
+              <option name="myItemId" value="javatictactoe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tictactoe" />
+              <option name="myItemId" value="javatictactoe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -285,7 +331,25 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tictactoe" />
+              <option name="myItemId" value="javatictactoe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tictactoe-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ttt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javatictactoe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -297,7 +361,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tictactoe" />
+              <option name="myItemId" value="ttt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,10 +371,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/test/tictactoe" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
@@ -344,11 +408,11 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in tictactoe">
-    <configuration default="false" name="tictactoe in tictactoe" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="org.mebert.ttt in tictactoe" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="tictactoe" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tictactoe" />
+      <option name="PACKAGE_NAME" value="org.mebert.ttt" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -370,8 +434,8 @@
       <module name="tictactoe" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tictactoe" />
-      <option name="MAIN_CLASS_NAME" value="tictactoe.AiTest" />
+      <option name="PACKAGE_NAME" value="org.mebert.ttt" />
+      <option name="MAIN_CLASS_NAME" value="org.mebert.ttt.AiTest" />
       <option name="METHOD_NAME" value="returnsFirstCornerForOpeningMove" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -392,8 +456,8 @@
       <module name="tictactoe" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tictactoe" />
-      <option name="MAIN_CLASS_NAME" value="tictactoe.MinPlayerTest" />
+      <option name="PACKAGE_NAME" value="org.mebert.ttt" />
+      <option name="MAIN_CLASS_NAME" value="org.mebert.ttt.MinPlayerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -414,8 +478,8 @@
       <module name="tictactoe" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tictactoe" />
-      <option name="MAIN_CLASS_NAME" value="tictactoe.AiTest" />
+      <option name="PACKAGE_NAME" value="org.mebert.ttt" />
+      <option name="MAIN_CLASS_NAME" value="org.mebert.ttt.AiTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -572,7 +636,7 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.tictactoe in tictactoe" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.org.mebert.ttt in tictactoe" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.AiTest.returnsFirstCornerForOpeningMove" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.MinPlayerTest" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.AiTest" />
@@ -593,7 +657,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="246" y="22" width="1916" height="1178" extended-state="0" />
+    <frame x="4" y="22" width="1676" height="1028" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -608,16 +672,16 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28476822" sideWeight="0.8974164" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16898395" sideWeight="0.7190161" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28098392" sideWeight="0.88342243" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19141105" sideWeight="0.6736494" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263506" sideWeight="0.88342243" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -715,57 +779,72 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/tictactoe/AiTest.java">
+    <entry file="file://$PROJECT_DIR$/test/org/mebert/ttt/AiTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="24" selection-start="1958" selection-end="1958" vertical-scroll-proportion="0.0">
+        <state line="81" column="24" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tictactoe/MinimaxPlayer.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mebert/ttt/Ai.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tictactoe/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="38" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/tictactoe/BoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="3" selection-start="2488" selection-end="2488" vertical-scroll-proportion="0.0">
+        <state line="89" column="3" selection-start="2426" selection-end="2426" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tictactoe/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mebert/ttt/MinimaxPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="18" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0">
+        <state line="24" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/tictactoe/GameTest.java">
+    <entry file="file://$PROJECT_DIR$/test/org/mebert/ttt/MinPlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="16" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/tictactoe/MockAi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tictactoe/Ai.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="3" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0">
+        <state line="16" column="3" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/tictactoe/MinPlayerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mebert/ttt/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="199" selection-end="199" vertical-scroll-proportion="0.14324693">
+        <state line="62" column="38" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mebert/ttt/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/mebert/ttt/BoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="1" selection-start="2316" selection-end="2316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/mebert/ttt/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="16" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/mebert/ttt/MockAi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mebert/ttt/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="-0.9341637">
           <folding />
         </state>
       </provider>
@@ -776,10 +855,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>ttt</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -822,7 +903,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>tictactoe</last-edited>
+          <last-edited>javaEEApplication|tictactoe</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
